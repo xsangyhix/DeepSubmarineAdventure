@@ -25,7 +25,7 @@ while not game_exit:
         if event.type == pygame.QUIT: # User clicked close
             game_exit = True # Setting the condition to end the Main Program loop
 
-    # --- Game logic shoud go here
+    # --- Game logic should go here
 
     # --- Drawing code should go here
 
@@ -33,8 +33,14 @@ while not game_exit:
     # above this, or they will be erased by this command.
     game_screen.fill(pygame.Color('white'))
 
+    # Drawing after the screen has been filled with white
+
+
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 
     # --- Limit to 60 frames per second
     game_clock.tick(game_framerate)
+
+# --- Exiting pygame
+pygame.quit()
